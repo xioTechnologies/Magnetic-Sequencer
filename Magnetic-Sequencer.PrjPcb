@@ -337,6 +337,18 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=BCKSGAQA
 
+[Parameter1]
+Name=Version
+Value=v1.1
+
+[Parameter2]
+Name=Project
+Value=Magnetic Sequencer
+
+[Parameter3]
+Name=Author
+Value=Seb Madgwick
+
 [Configuration1]
 Name=Sources
 ParameterCount=0
