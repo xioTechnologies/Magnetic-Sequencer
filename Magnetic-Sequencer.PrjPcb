@@ -66,7 +66,7 @@ GenerateClassCluster=0
 DocumentUniqueId=QZPKHVRY
 
 [Document2]
-DocumentPath=Microcontroller.SchDoc
+DocumentPath=PIC32MX.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -202,7 +202,7 @@ GenerateClassCluster=0
 DocumentUniqueId=MUXTBEMO
 
 [Document10]
-DocumentPath=Voltage Regulator.SchDoc
+DocumentPath=3.3V Regulator.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -236,7 +236,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document12]
-DocumentPath=Microcontroller.Harness
+DocumentPath=PIC32MX.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -338,16 +338,16 @@ GenerateClassCluster=0
 DocumentUniqueId=BCKSGAQA
 
 [Parameter1]
-Name=Version
-Value=v1.1
+Name=Author
+Value=Seb Madgwick
 
 [Parameter2]
 Name=Project
 Value=Magnetic Sequencer
 
 [Parameter3]
-Name=Author
-Value=Seb Madgwick
+Name=Version
+Value=v1.1
 
 [Configuration1]
 Name=Sources
