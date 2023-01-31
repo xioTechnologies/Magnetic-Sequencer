@@ -304,7 +304,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document16]
-DocumentPath=..\x-io-Altium-Library\x-io.PcbLib
+DocumentPath=..\..\x-io-Altium-Library\x-io.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -321,7 +321,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document17]
-DocumentPath=..\x-io-Altium-Library\x-io.SchLib
+DocumentPath=..\..\x-io-Altium-Library\x-io.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -335,7 +335,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=BCKSGAQA
+DocumentUniqueId=
 
 [Parameter1]
 Name=Author
