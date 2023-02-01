@@ -65,6 +65,7 @@ void DRV_USBFS_USB_Handler( void );
 
 void Timer5InterruptHandler();
 void Uart1InterruptHandler();
+void Dma1InterruptHandler();
 
 
 /* All the handlers are defined here.  Each will call its PLIB-specific function. */
@@ -83,6 +84,10 @@ void __ISR(_UART_1_VECTOR, ipl1SOFT) UART_1_Handler (void)
     Uart1InterruptHandler();
 }
 
+void __ISR(_DMA_1_VECTOR, ipl1SOFT) DMA_1_Handler (void)
+{
+    Dma1InterruptHandler();
+}
 
 
 

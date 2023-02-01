@@ -58,6 +58,7 @@ void EVIC_Initialize( void )
     IPC5SET = 0x1c | 0x0;  /* TIMER_5:  Priority 7 / Subpriority 0 */
     IPC7SET = 0x400 | 0x0;  /* USB_1:  Priority 1 / Subpriority 0 */
     IPC7SET = 0x4000000 | 0x0;  /* UART_1:  Priority 1 / Subpriority 0 */
+    IPC10SET = 0x4000000 | 0x0;  /* DMA_1:  Priority 1 / Subpriority 0 */
 
 
 }

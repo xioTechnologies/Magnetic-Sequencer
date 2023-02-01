@@ -193,11 +193,19 @@
           <itemPath>../src/config/default/configuration.h</itemPath>
         </logicalFolder>
       </logicalFolder>
+      <logicalFolder name="Neopixels" displayName="Neopixels" projectFiles="true">
+        <itemPath>../src/Neopixels/Neopixels.h</itemPath>
+        <itemPath>../src/Neopixels/HexToBitPattern.h</itemPath>
+      </logicalFolder>
       <logicalFolder name="x-io-PIC32-Library"
                      displayName="x-io-PIC32-Library"
                      projectFiles="true">
         <logicalFolder name="ResetCause" displayName="ResetCause" projectFiles="true">
           <itemPath>../src/x-io-PIC32-Library/ResetCause/ResetCause.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="Spi" displayName="Spi" projectFiles="true">
+          <itemPath>../src/x-io-PIC32-Library/Spi/Spi.h</itemPath>
+          <itemPath>../src/x-io-PIC32-Library/Spi/Spi1Dma.h</itemPath>
         </logicalFolder>
         <logicalFolder name="Timer" displayName="Timer" projectFiles="true">
           <itemPath>../src/x-io-PIC32-Library/Timer/Timer.h</itemPath>
@@ -274,11 +282,18 @@
           <itemPath>../src/config/default/tasks.c</itemPath>
         </logicalFolder>
       </logicalFolder>
+      <logicalFolder name="Neopixels" displayName="Neopixels" projectFiles="true">
+        <itemPath>../src/Neopixels/Neopixels.c</itemPath>
+      </logicalFolder>
       <logicalFolder name="x-io-PIC32-Library"
                      displayName="x-io-PIC32-Library"
                      projectFiles="true">
         <logicalFolder name="ResetCause" displayName="ResetCause" projectFiles="true">
           <itemPath>../src/x-io-PIC32-Library/ResetCause/ResetCause.c</itemPath>
+        </logicalFolder>
+        <logicalFolder name="Spi" displayName="Spi" projectFiles="true">
+          <itemPath>../src/x-io-PIC32-Library/Spi/Spi.c</itemPath>
+          <itemPath>../src/x-io-PIC32-Library/Spi/Spi1Dma.c</itemPath>
         </logicalFolder>
         <logicalFolder name="Timer" displayName="Timer" projectFiles="true">
           <itemPath>../src/x-io-PIC32-Library/Timer/Timer.c</itemPath>
