@@ -1,39 +1,36 @@
 /**
- * @file NeoPixels.h
+ * @file Sensor.h
  * @author Seb Madgwick
- * @brief NeoPixels driver.
+ * @brief TLV493D-A1B6 3D magnetic sensor driver.
  */
 
-#ifndef NEOPIXELS_H
-#define NEOPIXELS_H
+#ifndef SENSOR_H
+#define SENSOR_H
 
 //------------------------------------------------------------------------------
 // Includes
 
+#include "I2C/I2CBitBang.h"
 #include <stdint.h>
 
 //------------------------------------------------------------------------------
 // Definitions
 
 /**
- * @brief Number of pixels.
- */
-#define NEOPIXELS_NUMBER_OF_PIXELS (64)
-
-/**
- * @brief RGB pixel.
+ * @brief Sensor structure.
  */
 typedef struct {
-    uint8_t red;
-    uint8_t green;
-    uint8_t blue;
-} NeoPixelsPixel;
+    const I2CBitBang i2c;
+    uint8_t frameCounter;
+    int16_t x;
+    int16_t y;
+    int16_t z;
+} Sensor;
 
 //------------------------------------------------------------------------------
 // Function declarations
 
-void NeoPixelsInitialise();
-void NeoPixelsSet(const NeoPixelsPixel * const pixels);
+void SensorRead(Sensor * const sensor);
 
 #endif
 

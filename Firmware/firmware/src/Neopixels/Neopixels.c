@@ -28,7 +28,7 @@ typedef struct {
  * @brief SPI data to be transfered.
  */
 typedef struct {
-    BitPattern pixels[NUMBER_OF_PIXELS];
+    BitPattern pixels[NEOPIXELS_NUMBER_OF_PIXELS];
     uint8_t resetCode[35]; // 84 us
 } __attribute__((__packed__)) SpiData;
 
@@ -47,16 +47,17 @@ void NeoPixelsInitialise() {
 
 /**
  * @brief Sets the NeoPixels.
- * @param pixels Pixels.  The array length must equal NUMBER_OF_PIXELS.
+ * @param pixels Pixels.  The array length must equal to
+ * NEOPIXELS_NUMBER_OF_PIXELS.
  */
-void NeoPixelsSet(const NeoPixel * const pixels) {
+void NeoPixelsSet(const NeoPixelsPixel * const pixels) {
 
     // Wait for previous transfer to complete
     while (Spi1DmaIsTransferInProgress() == true);
 
     // Encode data
     static SpiData spiData;
-    for (int index = 0; index < NUMBER_OF_PIXELS; index++) {
+    for (int index = 0; index < NEOPIXELS_NUMBER_OF_PIXELS; index++) {
         spiData.pixels[index].red = hexToBitPattern[pixels[index].red];
         spiData.pixels[index].green = hexToBitPattern[pixels[index].green];
         spiData.pixels[index].blue = hexToBitPattern[pixels[index].blue];

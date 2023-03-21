@@ -197,9 +197,16 @@
         <itemPath>../src/Neopixels/Neopixels.h</itemPath>
         <itemPath>../src/Neopixels/HexToBitPattern.h</itemPath>
       </logicalFolder>
+      <logicalFolder name="Sensor" displayName="Sensor" projectFiles="true">
+        <itemPath>../src/Sensor/Sensor.h</itemPath>
+      </logicalFolder>
       <logicalFolder name="x-io-PIC32-Library"
                      displayName="x-io-PIC32-Library"
                      projectFiles="true">
+        <logicalFolder name="I2C" displayName="I2C" projectFiles="true">
+          <itemPath>../src/x-io-PIC32-Library/I2C/I2CBitBang.h</itemPath>
+          <itemPath>../src/x-io-PIC32-Library/I2C/I2CSlaveAddress.h</itemPath>
+        </logicalFolder>
         <logicalFolder name="ResetCause" displayName="ResetCause" projectFiles="true">
           <itemPath>../src/x-io-PIC32-Library/ResetCause/ResetCause.h</itemPath>
         </logicalFolder>
@@ -221,6 +228,7 @@
         <itemPath>../src/x-io-PIC32-Library/CircularBuffer.h</itemPath>
         <itemPath>../src/x-io-PIC32-Library/PeripheralBusClockFrequency.h</itemPath>
       </logicalFolder>
+      <itemPath>../src/Sensors.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -285,9 +293,15 @@
       <logicalFolder name="Neopixels" displayName="Neopixels" projectFiles="true">
         <itemPath>../src/Neopixels/Neopixels.c</itemPath>
       </logicalFolder>
+      <logicalFolder name="Sensor" displayName="Sensor" projectFiles="true">
+        <itemPath>../src/Sensor/Sensor.c</itemPath>
+      </logicalFolder>
       <logicalFolder name="x-io-PIC32-Library"
                      displayName="x-io-PIC32-Library"
                      projectFiles="true">
+        <logicalFolder name="I2C" displayName="I2C" projectFiles="true">
+          <itemPath>../src/x-io-PIC32-Library/I2C/I2CSlaveAddress.c</itemPath>
+        </logicalFolder>
         <logicalFolder name="ResetCause" displayName="ResetCause" projectFiles="true">
           <itemPath>../src/x-io-PIC32-Library/ResetCause/ResetCause.c</itemPath>
         </logicalFolder>

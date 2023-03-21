@@ -16,6 +16,8 @@
 #include "definitions.h"
 #include "NeoPixels/NeoPixels.h"
 #include "ResetCause/ResetCause.h"
+#include "Sensor/Sensor.h"
+#include "Sensors.h"
 #include <stdbool.h>
 #include <stddef.h>
 #include <stdlib.h>
@@ -52,17 +54,15 @@ int main(void) {
         const size_t numberOfBytes = UsbCdcRead(data, sizeof (data));
         UsbCdcWrite(data, numberOfBytes);
 
-        // NeoPixel test pattern
-        static TimerEvent timerEvent;
-        if (TimerEventPoll(&timerEvent, 0.05f) == true) {
-            static NeoPixel neoPixels[NUMBER_OF_PIXELS];
-            for (int index = 0; index < NUMBER_OF_PIXELS; index++) {
-                neoPixels[index].red += index + 1;
-                neoPixels[index].green += index + 2;
-                neoPixels[index].blue += index + 3;
-            }
-            NeoPixelsSet(neoPixels);
+        // Test sensors and pixels
+        static NeoPixelsPixel pixels[NEOPIXELS_NUMBER_OF_PIXELS];
+        for (int index = 0; index < NEOPIXELS_NUMBER_OF_PIXELS; index++) {
+            SensorRead(&sensors[index]);
+            pixels[index].red = abs(sensors[index].x) / 8;
+            pixels[index].green = abs(sensors[index].y) / 8;
+            pixels[index].blue = abs(sensors[index].z) / 8;
         }
+        NeoPixelsSet(pixels);
     }
     return (EXIT_FAILURE);
 }
