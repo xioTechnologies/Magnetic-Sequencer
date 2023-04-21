@@ -7,6 +7,7 @@
 //------------------------------------------------------------------------------
 // Includes
 
+#include "I2C/I2CSlaveAddress.h"
 #include "I2C/I2CStartSequence.h"
 #include "Sensor.h"
 #include <string.h> // memset

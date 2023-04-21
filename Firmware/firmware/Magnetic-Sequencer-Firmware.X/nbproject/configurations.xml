@@ -206,6 +206,7 @@
         <logicalFolder name="I2C" displayName="I2C" projectFiles="true">
           <itemPath>../src/x-io-PIC32-Library/I2C/I2CBitBang.h</itemPath>
           <itemPath>../src/x-io-PIC32-Library/I2C/I2CSlaveAddress.h</itemPath>
+          <itemPath>../src/x-io-PIC32-Library/I2C/I2CStartSequence.h</itemPath>
         </logicalFolder>
         <logicalFolder name="ResetCause" displayName="ResetCause" projectFiles="true">
           <itemPath>../src/x-io-PIC32-Library/ResetCause/ResetCause.h</itemPath>
@@ -301,6 +302,7 @@
                      projectFiles="true">
         <logicalFolder name="I2C" displayName="I2C" projectFiles="true">
           <itemPath>../src/x-io-PIC32-Library/I2C/I2CSlaveAddress.c</itemPath>
+          <itemPath>../src/x-io-PIC32-Library/I2C/I2CStartSequence.c</itemPath>
         </logicalFolder>
         <logicalFolder name="ResetCause" displayName="ResetCause" projectFiles="true">
           <itemPath>../src/x-io-PIC32-Library/ResetCause/ResetCause.c</itemPath>
