@@ -69,7 +69,7 @@
 #pragma config FPBDIV =     DIV_1
 #pragma config FSOSCEN =    OFF
 #pragma config IESO =       ON
-#pragma config POSCMOD =    HS
+#pragma config POSCMOD =    EC
 #pragma config OSCIOFNC =   OFF
 #pragma config FCKSM =      CSDCMD
 #pragma config WDTPS =      PS1048576
