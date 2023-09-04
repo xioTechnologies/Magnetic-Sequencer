@@ -48,10 +48,10 @@
 // Section: Included Files
 // *****************************************************************************
 // *****************************************************************************
-
 #include "configuration.h"
 #include "interrupts.h"
 #include "definitions.h"
+
 
 
 // *****************************************************************************
@@ -61,14 +61,26 @@
 // *****************************************************************************
 
 
-void DRV_USBFS_USB_Handler( void );
+/* All the handlers are defined here.  Each will call its PLIB-specific function. */
+// *****************************************************************************
+// *****************************************************************************
+// Section: System Interrupt Vector declarations
+// *****************************************************************************
+// *****************************************************************************
+void TIMER_5_Handler (void);
+void USB_1_Handler (void);
+void UART_1_Handler (void);
+void DMA_1_Handler (void);
 
 void Timer5InterruptHandler();
 void Uart1InterruptHandler();
 void Dma1InterruptHandler();
 
-
-/* All the handlers are defined here.  Each will call its PLIB-specific function. */
+// *****************************************************************************
+// *****************************************************************************
+// Section: System Interrupt Vector definitions
+// *****************************************************************************
+// *****************************************************************************
 void __ISR(_TIMER_5_VECTOR, ipl7SRS) TIMER_5_Handler (void)
 {
     Timer5InterruptHandler();
@@ -88,6 +100,8 @@ void __ISR(_DMA_1_VECTOR, ipl1SOFT) DMA_1_Handler (void)
 {
     Dma1InterruptHandler();
 }
+
+
 
 
 

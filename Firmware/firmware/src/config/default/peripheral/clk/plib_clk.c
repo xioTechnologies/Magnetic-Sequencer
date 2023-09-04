@@ -89,13 +89,16 @@ void CLK_Initialize( void )
     
 
     /* Wait for PLL to be locked */
-    while(!OSCCONbits.SLOCK);
+    while(OSCCONbits.SLOCK == 0U)
+                 {
+                      /* Nothing to do */
+                 }
 
     /* Peripheral Module Disable Configuration */
-    PMD1 = 0x0;
-    PMD2 = 0x0;
-    PMD3 = 0x0;
-    PMD4 = 0x0;
-    PMD5 = 0x0;
-    PMD6 = 0x0;
+    PMD1 = 0x0U;
+    PMD2 = 0x0U;
+    PMD3 = 0x0U;
+    PMD4 = 0x0U;
+    PMD5 = 0x0U;
+    PMD6 = 0x0U;
 }
