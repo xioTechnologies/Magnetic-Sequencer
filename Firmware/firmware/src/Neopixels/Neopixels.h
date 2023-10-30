@@ -32,7 +32,7 @@ typedef struct {
 //------------------------------------------------------------------------------
 // Function declarations
 
-void NeoPixelsInitialise();
+void NeoPixelsInitialise(void);
 void NeoPixelsSet(const NeoPixelsPixel * const pixels);
 
 #endif

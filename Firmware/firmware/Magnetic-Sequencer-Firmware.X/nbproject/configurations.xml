@@ -526,6 +526,7 @@
         <property key="save-temps" value="false"/>
         <property key="stack-smashing" value=""/>
         <property key="wpo-lto" value="false"/>
+        <appendMe value="-Wstrict-prototypes"/>
       </C32Global>
       <ICD4Tool>
         <property key="ADC 1" value="true"/>

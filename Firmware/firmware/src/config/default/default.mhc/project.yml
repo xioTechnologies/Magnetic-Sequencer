@@ -33,7 +33,7 @@ files:
   physicalPath: ''
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 4DB0723730E7A22652386518D4D72AAC
+  userChecksum: B8530084EBBB982130E75106044BF7B3
 - generatedChecksum: null
   logicalPath: ''
   name: main.c
@@ -194,7 +194,7 @@ files:
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
-  userChecksum: C6652851E148A8BC166C4749A78BCEA5
+  userChecksum: 5636DD05604795F745AAB32C0CA9D086
 - generatedChecksum: 4B9BAF342067F765AF2BBAA2412CED58
   logicalPath: config/default/osal
   name: osal.h

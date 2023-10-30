@@ -39,7 +39,7 @@ typedef struct {
  * @brief Initialises the module.  This function must only be called once, on
  * system startup.
  */
-void NeoPixelsInitialise() {
+void NeoPixelsInitialise(void) {
     SpiSettings settings = spiSettingsDefault;
     settings.clockFrequency = 3333333; // 4 bits = 1.2 us
     Spi1DmaInitialise(&settings);

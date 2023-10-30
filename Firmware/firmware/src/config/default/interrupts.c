@@ -72,10 +72,6 @@ void USB_1_Handler (void);
 void UART_1_Handler (void);
 void DMA_1_Handler (void);
 
-void Timer5InterruptHandler();
-void Uart1InterruptHandler();
-void Dma1InterruptHandler();
-
 // *****************************************************************************
 // *****************************************************************************
 // Section: System Interrupt Vector definitions
