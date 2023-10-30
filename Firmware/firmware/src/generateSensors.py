@@ -9,10 +9,14 @@ with open("Sensors.h", "w") as file:
     file.write("#include \"definitions.h\"\n")
     file.write("#include \"Sensor/Sensor.h\"\n\n")
 
+    grid_size = 8
+
+    file.write("#define SENSORS_NUMBER_OF_SENSORS (" + str(grid_size * grid_size) + ")\n\n")
+
     file.write("Sensor sensors[] = {\n")
 
-    for scl in range(8):
-        for sda in range(8):
+    for scl in range(grid_size):
+        for sda in range(grid_size):
             file.write("    {\n")
             file.write("        .i2c =\n")
             file.write("        {\n")

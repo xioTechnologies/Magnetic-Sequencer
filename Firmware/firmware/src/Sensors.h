@@ -6,6 +6,8 @@
 #include "definitions.h"
 #include "Sensor/Sensor.h"
 
+#define SENSORS_NUMBER_OF_SENSORS (64)
+
 Sensor sensors[] = {
     {
         .i2c =
