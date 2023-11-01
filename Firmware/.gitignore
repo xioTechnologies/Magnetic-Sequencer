@@ -1,4 +1,5 @@
 **/*.X/**
+!**/*.X/*.mc3
 !**/*.X/Makefile
 !**/*.X/nbproject
 !**/*.X/nbproject/configurations.xml
