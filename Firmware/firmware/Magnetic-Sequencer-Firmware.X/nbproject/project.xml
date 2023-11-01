@@ -4,16 +4,16 @@
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
             <name>Magnetic-Sequencer-Firmware</name>
-            <creation-uuid>e54023e9-3948-44ef-bf6f-29d8b223e555</creation-uuid>
+            <creation-uuid>963c11ab-939e-4ac0-9b15-326c24011df8</creation-uuid>
             <make-project-type>0</make-project-type>
-            <c-extensions>c</c-extensions>
-            <cpp-extensions/>
-            <header-extensions>h</header-extensions>
-            <asminc-extensions/>
             <sourceEncoding>ISO-8859-1</sourceEncoding>
             <make-dep-projects/>
             <sourceRootList>
-                <sourceRootElem>../src</sourceRootElem>
+                <sourceRootElem>../src/x-io-PIC32-Library</sourceRootElem>
+                <sourceRootElem>../src/Neopixels</sourceRootElem>
+                <sourceRootElem>../src/Receive</sourceRootElem>
+                <sourceRootElem>../src/Send</sourceRootElem>
+                <sourceRootElem>../src/Sensor</sourceRootElem>
             </sourceRootList>
             <confList>
                 <confElem>
