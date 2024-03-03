@@ -53,7 +53,7 @@ void NeoPixelsInitialise(void) {
 void NeoPixelsSet(const NeoPixelsPixel * const pixels) {
 
     // Wait for previous transfer to complete
-    while (Spi1DmaIsTransferInProgress() == true);
+    while (Spi1DmaIsTransferInProgress());
 
     // Encode data
     static SpiData spiData;
